@@ -1,0 +1,19 @@
+
+.container{
+	max-width: 400px;
+	background: #FAFAFA;
+	padding: 30px;
+	margin: 50px auto;
+	box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+	border-radius: 10px;
+	border: 6px solid #305A72;
+}
+.ng-valid[required], .ng-valid.required  {
+    border-left: 5px solid #42A948; /* green */
+  }
+  
+  .ng-invalid:not(form)  {
+    border-left: 5px solid #a94442; /* red */
+  }h1{
+		text-align: center;
+	}

@@ -1,0 +1,46 @@
+<div class="row " >
+  <div class="column col-md-12">
+    <div class="container ">
+      <div class="divBorder col-md-12">
+        <div class="row">
+          <div class="Head col-md-12">
+            <h6><b>PARENT ITEM</b></h6>
+          </div>
+        </div>
+        <br>
+        <label> First Name: </label>&nbsp;
+        <input  class = "in" type="text" placeholder=" Input textfield" [(ngModel)]="first" /><br>
+        <br>
+        <label> Last Name: </label>&nbsp;
+        <input  class = "in" type="text"  placeholder=" Input textfield" [(ngModel)]="last" /><br>
+        <br>
+        <label>Gender: </label>&nbsp;
+        <select [(ngModel)]="gender">
+          <option value="Female">Female</option>
+          <option value="Male">Male</option>
+        </select> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span>Enroll ? </span>&nbsp;
+        <input type="checkbox" (change)="toggelEnroll()" value="enroll"><br>
+        <br>
+        <button class="btn btn-success btn-sm" type="button" (click)="onClick()">Submit</button>
+        <br>
+        <br>
+        <h6 *ngIf="response"> Notification: {{response}} </h6>
+        <br>
+        <h6>{{listDeclined}}</h6>
+        <ul>
+          <li *ngFor="let applicant of student">
+              First Name : {{applicant.fname}} <br>
+              Last Name : {{applicant.lname}} <br>
+              Status: {{applicant.enrolled}} <br>
+              Gender : {{applicant.gender}}
+          </li> 
+          </ul>
+        <br>
+      </div>
+    </div>
+  </div>
+  <div class="column col-md-12">
+    <app-activity5-child (data)="getDeclinedData($event)" (response)="getresponse($event)"  [applicant]="applicant"></app-activity5-child>
+  </div>
+</div>

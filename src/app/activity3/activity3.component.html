@@ -1,0 +1,14 @@
+<div class="style">
+    <h3>{{title}}</h3>
+    <br>
+
+    <!-- class binding -->
+    <button class="active" [class.active]="isActive">class</button>&nbsp;
+    <!-- stylebinding -->
+    <button class="style" [style.background]="style?'yellow':blue">style</button>&nbsp;
+    <!-- property binding -->
+    <button class="property" [disabled]="property">property</button>&nbsp;
+    <!-- Event binding -->
+    <!-- <button  class="btn btn-info" onClick()="click">Click me</button> -->
+    <button class="primary" (click)="onClick()">Event</button>
+</div>

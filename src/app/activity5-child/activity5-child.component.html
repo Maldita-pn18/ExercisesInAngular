@@ -1,0 +1,37 @@
+<div class="container ">
+  <div class="divBorder col-md-12">
+    <div class=" row">
+      <div class="Head col-md-12">
+        <h6><b>CHILD TEMPLATE</b></h6>
+      </div>
+    </div>
+    <br>
+    <label> First Name: {{applicant.fname}}</label>
+    <br>
+    <label> Last Name: {{applicant.lname}} </label>
+    <br>
+    <label>Gender : {{applicant.gender}}</label><br>
+    <label>Enroll : {{applicant.enrolled}}</label>&nbsp;
+    <br>
+    <button class="btn btn-success btn-sm" type="button" (click)="onclick(approvedata)" [disabled]="applicant.fname == ''">Approve</button>
+    &nbsp;
+    <button class="btn btn-danger btn-sm" type="button" (click)="onclick(declinedata)" [disabled]="applicant.fname == ''">Decline</button>
+    <br>
+    <br>
+    <h6>{{listApproved}}</h6>
+    <ul>
+      <li *ngFor="let applicant of people">
+          First Name : {{applicant.fname}}<br>
+           Last Name : {{applicant.lname}}<br>
+            Status: {{applicant.enrolled}}<br>
+             Gender : {{applicant.gender}}
+      </li>
+    </ul><br>
+    <br>
+    <br>
+
+
+  </div>
+
+
+</div>

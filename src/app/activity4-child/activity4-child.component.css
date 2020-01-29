@@ -1,0 +1,15 @@
+.style{
+    border-style: ridge;
+    padding: 14px;
+    border: 1px solid black;
+}
+h3{
+    color:black;
+}
+.p1{
+    padding: 10px;
+}
+.send{
+    padding: 11px;
+    background-color:  #5CC928;
+}

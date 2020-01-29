@@ -1,0 +1,27 @@
+.primary{
+    color:black;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    background: lightgreen;
+    padding: 14px;
+    
+}
+.active {
+    color:black;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    background: rgb(89, 140, 216);
+    padding: 14px;
+}
+.style,
+.property {
+    color:black;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    padding: 14px;
+
+}
+h3{
+    color:lightcoral;
+    font-size: 20px;
+}
+.style{
+    border-style: ridge;
+}

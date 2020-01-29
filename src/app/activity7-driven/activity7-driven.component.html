@@ -1,0 +1,30 @@
+<div class="container">
+    <h1>Data Driven</h1>
+    <form [formGroup]="reactiveForm" (ngSubmit)="onSubmit()">
+        <label for="name"><b>Personal Information</b></label><br>
+        <label for="name">First Name</label>
+            <input type="text" class="form-control"  formControlName= "firstname" required>
+            <label for="name">Last Name</label>
+            <input type="text" class="form-control" formControlName= "lastname" required>
+            <label for="email">Email</label>
+            <input type="text" class="form-control"  formControlName= "email" required>
+            <br>
+            <label for="name"><b>Address</b></label>
+            <br>    
+            <label for="name">Street</label>
+            <input type="text" class="form-control"  formControlName= "street" required>
+            <label for="name">City</label>
+            <input type="text" class="form-control" formControlName= "city" required>
+            <label for="name">State</label>
+            <input type="text" class="form-control" formControlName= "state" required>
+            <label for="name">Zip Code</label>
+            <input type="text" class="form-control" formControlName= "code"  required>
+<br>
+        <button type="submit" class="btn btn-success"  [disabled]="!reactiveForm.valid">Submit</button>
+    
+    </form>
+    <br>
+    <div *ngIf="showup">
+        {{reactiveForm.value|json}}
+    </div>
+</div>

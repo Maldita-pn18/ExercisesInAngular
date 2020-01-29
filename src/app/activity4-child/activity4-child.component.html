@@ -1,0 +1,11 @@
+<!-- <h3>{{child}}</h3>
+<input class ="p1" type="text"  size="35px" ><button  class ="send">Send</button><br>
+<h4> Messages:  {{parentData}} </h4> -->
+
+<div class="style">
+    <h3>{{child}}</h3>
+    <input class ="p1" type="text" size="35px"  [(ngModel)]="cdata"><button class ="send"  (click)="onChange(cdata)" >Send</button><br>
+    <h4> Messages: {{parentData}}  </h4>
+    <br>
+</div>
+

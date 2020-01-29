@@ -1,0 +1,10 @@
+
+    <div class="style">
+        <h3>{{parent}}</h3>
+        <input class ="p1" type="text" size="35px"  [(ngModel)]="data"  ><button class ="send" (click)="onChange()">Send</button><br>
+        <h4> Messages: {{cdata}}  </h4>
+        <br>
+        
+    </div>
+    <app-activity4-child (childEvent)="cdata=$event" [parentData]="pdata"></app-activity4-child>
+

@@ -1,0 +1,32 @@
+.Head {
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+  }
+ 
+  .divBorder {
+    background-color: azure;
+    border: 2px solid black;
+    /* margin-left :25px; */
+  }
+  .Header {
+    background-color: lightblue;
+    color: black;
+    height: 40px;
+    padding-top: 10px;
+    border: 2px solid black;
+  }
+ 
+
+  header{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  .header-right{
+    margin-top:-55px;;
+  }
